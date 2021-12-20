@@ -29,6 +29,8 @@ a{ /* Je prends tous les liens du fichier (plus rapide) */
 
 /* Fin Général */
 
+/* --------------------------------------------------------------------------------------------------------------- */
+
 /* Header */
 
 header{
@@ -47,6 +49,7 @@ header a{
     position: fixed; /* Pour fixer la barre en haut même si on scroll en bas */
     background-color: var(--header-orange);
     width: 100%;
+    justify-content: space-between;
 }
 
 nav a{
@@ -54,8 +57,11 @@ nav a{
 }
 
 .linkLeft{
-    display: flex;
     margin-right: 3%;
+}
+
+.linksLeft{
+    display: flex;
 }
 
 .linksMiddle{
@@ -128,6 +134,8 @@ header h2{
 
 /* Fin Header */
 
+/* --------------------------------------------------------------------------------------------------------------- */
+
 /* Main */
 
 main{
@@ -198,6 +206,145 @@ main{
     transition: 0.5s;
 }
 
+.secondSection h3{
+    font-size: 27px;
+    font-weight: normal;
+    padding: 2% 0 4% 0;
+}
 
+.secondSectionIcons{
+    display: flex;
+    align-items: center;
+    padding-bottom: 8%;
+}
 
+.secondSectionIcons i{
+    font-size: 70px;
+    padding-right: 3%;
+    color: var(--body-orange);
+}
+
+.secondSectionIcons p{
+    font-size: 20px;
+    font-weight: lighter;
+}
 /* Fin Main */
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* Footer */
+
+footer{
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+footer h3{
+    color: var(--body-white);
+    font-weight: lighter;
+}
+
+.footerTop{
+    background-color: var(--footer-darkgrey);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3% 9%;
+}
+
+.footerLinksColumn{
+    width: 20%;
+}
+
+.footerLinksColumn .footerLinks{
+    width: 100% !important;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.footerLink{
+    display: flex;
+    flex-direction: column;
+}
+
+.plus{
+    padding-left: 5%;
+}
+
+.footerLinks h3, .footerLink h3{
+    padding-bottom: 5%;
+}
+
+.footerLinks a, .footerLink a{
+    color: #a09e9e;
+    padding-bottom: 6%;
+}
+
+.footerLinks a:hover, .footerLink a:hover{
+    color: var(--body-orange);
+    transition: 0.5s;
+}
+
+.footerLinks p{
+    width: 100%;
+    color: #a09e9e;
+    line-height: 1.4rem;
+    padding-bottom: 5%;
+}
+
+.icons a{
+    color: var(--body-orange);
+    font-size: 22px;
+    padding-right: 3%;
+}
+
+.icons a:hover{
+    color: var(--body-orange-hover);
+    transition: 0.5s;
+}
+
+.footerBtnLink{
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px;
+    background-color: var(--body-blue);
+    padding: 8% 15% !important;
+    color: var(--body-white) !important;
+}
+
+.footerBtnLink:hover{
+    background-color: var(--body-blue-hover);
+    transition: 0.5s;
+}
+
+.footerBottom{
+    background-color: var(--footer-darkergrey);
+}
+
+.footerBottom h4{
+    color: #a09e9e;
+    font-weight: lighter;
+    padding: 1% 10%;
+}
+
+.footerBottom a{
+    color: var(--body-orange);
+}
+
+.footerBottom a:hover{
+    color: var(--body-orange-hover);
+    transition: 0.5s;
+}
+
+/* Fin Footer */
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* Responsive */
+
+/* Fin Responsive */
