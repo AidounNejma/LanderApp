@@ -1,0 +1,203 @@
+/* Général */
+
+* { /* "*" Permet de prendre tout du fichier html, on met ensuite les valeurs à 0 pour que tout colle (qu'il n'y est pas d'espace blanc sur les cotés) */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Création de variables de couleurs pour toujours garder les mêmes sans se tromper */
+:root{
+    --body-blue: #02202f;
+    --body-blue-hover: #044160;
+    --body-white: #fff;
+    --body-black: #000;
+    --body-orange: #F49B6C;
+    --body-orange-hover: #D1784E;
+    --header-orange: #f38e59;
+    --main-blue: #5BB5DE;
+    --main-grey: #333;
+    --footer-darkgrey: #404040;
+    --footer-darkergrey: #333;
+}    
+
+a{ /* Je prends tous les liens du fichier (plus rapide) */
+    text-decoration: none; /* et je modifie le style basique des liens (qui est souligné)*/
+}
+
+/* Fin Général */
+
+/* Header */
+
+header{
+    background-color: var(--header-orange);
+}
+
+header a{
+    color: var(--main-black);
+}
+
+
+ nav{ /* Ma nav regroupe les liens de la barre du menu (tout en haut de la page) */
+    display: flex; /* display flex => si on ne précise pas le "flex-direction" c'est qu'il est en row */
+    align-items: center; /* "align-items" aligne les objets sur l'axe secondaire */
+    padding: 1% 9%; /*  le padding prend de l'espace dans la boite. La 1ère valeur: haut et bas, la 2ème : gauche et droit */
+    position: fixed; /* Pour fixer la barre en haut même si on scroll en bas */
+    background-color: var(--header-orange);
+    width: 100%;
+}
+
+nav a{
+    color: var(--body-white);
+}
+
+.linkLeft{
+    display: flex;
+    margin-right: 3%;
+}
+
+.linksMiddle{
+    display: flex;
+    margin-right: 20%;
+}
+
+.linksMiddle a{
+    padding: 7% 9%
+}
+
+.linksMiddle a:hover{
+    background-color: var(--body-white);
+    color: var(--body-black);
+    transition: 0.5s;
+}
+
+.linksRight{
+    display: flex;
+    padding-left: 15%;
+}
+
+.navBtn{
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 5px;
+}
+
+.left{
+    width: 200px;
+    background-color: var(--body-blue);
+}
+
+.left:hover{
+    background-color: var(--body-blue-hover);
+    transition: 0.5s;
+}
+
+.right{
+    width: 100px;
+    border: solid var(--body-white) 2px;
+}
+
+.right:hover{
+    background-color: #ffffff33;
+    transition: 0.5s;
+}
+
+header h1, header h2{
+    text-align: center;
+}
+
+header h1{
+    padding-top: 15%;
+    font-size: 70px;
+    color: var(--body-white);
+}
+
+header h2{
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 1% 0 6% 0;
+}
+
+/* Fin Header */
+
+/* Main */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 6%;
+    color: var(--main-grey);
+}
+
+.secondSection a{
+    color: var(--body-orange);
+}
+
+.firstSection, .secondSection{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 2%;
+}
+
+.firstSection h2, .secondSection h2{
+    color: var(--main-blue);
+    font-size: 30px;
+    padding-bottom: 3%;
+}
+
+.firstParagraph{
+    line-height: 1.5rem;
+    padding-bottom: 10%;
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input, .form textarea{
+    margin-bottom: 5%;
+    padding: 2.5%;
+    border-radius: 6px;
+    border: solid 1px #b4b1b1;
+}
+
+.form input::placeholder, .form textarea::placeholder{
+    font-style: italic;
+    color: #c5c2c2;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.form button{
+    background-color: var(--body-orange);
+    cursor: pointer;
+    border: none;
+    color: var(--body-white);
+    border-radius: 6px;
+    padding: 4% 0;
+    width: 24%;
+    margin-left: 76%;
+    font-weight: bold;
+}
+
+.form button:hover{
+    background-color: var(--body-orange-hover);
+    transition: 0.5s;
+}
+
+
+
+/* Fin Main */
