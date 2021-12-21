@@ -57,16 +57,11 @@ nav a{
 }
 
 .linkLeft{
-    margin-right: 3%;
+    margin-right: 4%;
 }
 
-.linksLeft{
+.linksLeft, .linksMiddle, .linksRight{
     display: flex;
-}
-
-.linksMiddle{
-    display: flex;
-    margin-right: 20%;
 }
 
 .linksMiddle a{
@@ -77,11 +72,6 @@ nav a{
     background-color: var(--body-white);
     color: var(--body-black);
     transition: 0.5s;
-}
-
-.linksRight{
-    display: flex;
-    padding-left: 15%;
 }
 
 .navBtn{
@@ -114,6 +104,17 @@ nav a{
 .right:hover{
     background-color: #ffffff33;
     transition: 0.5s;
+}
+
+.burger{
+    display: none;
+    width: 55px;
+    height: 50px;
+    padding: 2%;
+    border: solid 1px white;
+    margin-left: 2%;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 header h1, header h2{
@@ -218,10 +219,8 @@ main{
     padding-bottom: 8%;
 }
 
-.secondSectionIcons i{
-    font-size: 70px;
+.secondSectionIcons img{
     padding-right: 3%;
-    color: var(--body-orange);
 }
 
 .secondSectionIcons p{
@@ -248,7 +247,7 @@ footer h3{
     background-color: var(--footer-darkgrey);
     display: flex;
     justify-content: space-evenly;
-    padding: 3% 9%;
+    padding: 3% 6%;
 }
 
 .footerLinksColumn{
@@ -265,25 +264,16 @@ footer h3{
     width: 20%;
 }
 
-.footerLink{
-    display: flex;
-    flex-direction: column;
-}
-
-.plus{
-    padding-left: 5%;
-}
-
-.footerLinks h3, .footerLink h3{
+.footerLinks h3{
     padding-bottom: 5%;
 }
 
-.footerLinks a, .footerLink a{
+.footerLinks a{
     color: #a09e9e;
     padding-bottom: 6%;
 }
 
-.footerLinks a:hover, .footerLink a:hover{
+.footerLinks a:hover{
     color: var(--body-orange);
     transition: 0.5s;
 }
@@ -346,5 +336,88 @@ footer h3{
 /* --------------------------------------------------------------------------------------------------------------- */
 
 /* Responsive */
+@media screen and (max-width: 1235px){
+    nav{
+        padding: 1% 2%;
+    }
+    
+    .linksMiddle{
+        display: none;
+    }
 
+    .burger{
+        display: flex;
+    }
+
+    main{
+        padding: 6% 0;
+    }
+
+    .footerTop{
+        padding: 3% 2%;
+    }
+
+    .footerBottom h4{
+        padding: 1%;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    header h1{
+        padding-top: 20%;
+        font-size: 50px;
+    }
+    header h2{
+        font-size: 15px;
+    }
+    .footerBtnLink {
+        width: 150px;
+        padding: 10% 16% !important;
+    }
+}
+
+@media screen and (max-width: 800px){
+    main{
+        flex-direction: column;
+    }
+
+    .firstSection, .secondSection{
+        width: 100%;
+    }
+
+    .footerTop{
+        flex-direction: column;
+        justify-content: center;
+        padding: 3%;
+        text-align: center;
+    }
+
+    .footerLinks, .footerLinksColumn{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .footerLinks h3{
+        padding: 5% 0 1% 0;
+    }
+
+    .footerLinks a {
+        padding: 0 1%;
+        font-size: 11px;
+    }
+
+    .icons a{
+        font-size: 40px;
+    }
+
+    .last{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 414px){
+
+}
 /* Fin Responsive */
