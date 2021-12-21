@@ -41,3 +41,22 @@ function closeSideMenu(){
         sideMenuLinks[0].style.display = 'none';
     }
 }
+
+
+/* Animation des liens du side menu */
+let childLinks = document.getElementsByClassName('sideMenuLinksChild');
+//console.log(childLinks);
+
+let parents = document.getElementsByClassName('parentLinks');
+//console.log(parents);
+
+for(let i = 0; i < parents.length; i++){
+    parents[i].addEventListener('click', e=>{
+        if(e.target.nextElementSibling.style.display = "none"){
+            e.target.nextElementSibling.style.display = "flex";
+        }
+        else{
+            e.target.nextElementSibling.style.display = "none";
+        }
+    });
+}
