@@ -51,7 +51,7 @@ let parents = document.getElementsByClassName('parentLinks');
 //console.log(parents);
 
 let back = document.getElementsByClassName('back');
-console.log(back)
+//console.log(back)
 
 for(let i = 0; i < parents.length; i++){
     parents[i].addEventListener('click', e=>{
