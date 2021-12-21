@@ -335,6 +335,7 @@ footer h3{
 
 /* --------------------------------------------------------------------------------------------------------------- */
 
+/* Breaking point 1235px pour la nav */
 /* Responsive */
 @media screen and (max-width: 1235px){
     nav{
@@ -363,6 +364,7 @@ footer h3{
 
 }
 
+/* Breaking point 1024px */
 @media screen and (max-width: 1024px){
     header h1{
         padding-top: 20%;
@@ -377,6 +379,7 @@ footer h3{
     }
 }
 
+/* Breaking point 800px */
 @media screen and (max-width: 800px){
     main{
         flex-direction: column;
@@ -417,7 +420,78 @@ footer h3{
 
 }
 
+/* Iphone 6/7/8 PLUS */
 @media screen and (max-width: 414px){
+    nav{
+        position: unset;
+        padding: 3% 4%;
+    }
 
+    .linkLeft img{
+        width: 100px;
+    }
+
+    .right{
+        display: none;
+    }
+
+    header h1 {
+        font-size: 35px;
+        padding-bottom: 3%;
+    }
+
+    header h2 {
+        font-size: 16px;
+        padding-bottom: 10%;
+    }
+
+    .firstSection, .secondSection {
+        padding: 7% 5%;
+    }
+
+    .firstSection h2, .secondSection h2 {
+        font-size: 20px;
+    }
+
+    .firstParagraph {
+        line-height: 1.8rem;
+        font-size: 18px;
+    }
+
+    .form input, .form textarea {
+        margin-bottom: 7%;
+        padding: 3%;
+    }
+
+    .form button {
+        width: 100%;
+        margin: auto;
+        padding: 6% 0;
+    }
+
+    .secondSection h3 {
+        font-size: 22px;
+    }
+
+    .secondSectionIcons p {
+        font-size: 19px;
+        line-height: 1.7rem;
+    }
+
+    .footerBottom h4 {
+        padding: 2%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px){
+.left {
+    width: 130px;
+}
+
+.navBtn {
+    font-size: 10px;
+    padding: 8px 5px;
+}
 }
 /* Fin Responsive */
