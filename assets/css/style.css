@@ -241,6 +241,7 @@ nav a{
     position: absolute;
     background-color: var(--body-white);
     width: -webkit-fill-available;
+    height: fit-content;
     z-index: 1;
 }
 
@@ -250,6 +251,10 @@ nav a{
 
 .back i{
     font-size: 12px;
+}
+
+.infographics{
+    margin-bottom: 10%;
 }
 
 header h1, header h2{
@@ -595,6 +600,11 @@ footer h3{
     .right{
         display: none;
     }
+
+    .sideMenuLinks {
+        width: inherit;
+    }
+    
 
     header h1 {
         font-size: 35px;
