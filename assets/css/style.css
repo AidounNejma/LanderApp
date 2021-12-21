@@ -98,10 +98,18 @@ nav a{
 
 .linksLeft, .linksMiddle, .linksRight{
     display: flex;
+    align-items: center;
 }
 
-.linksMiddle a{
-    padding: 7% 9%
+.dropdownMenu{
+    margin: 1% 4%;
+    position: relative;
+    display: inline-block;
+}
+
+.childLinks{
+    padding: 16px;
+    font-size: 16px;
 }
 
 .linksMiddle a:hover{
@@ -205,6 +213,32 @@ header h2{
     font-weight: lighter;
     padding: 1% 0 6% 0;
 }
+
+/* Animation Hover Menu */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: var(--body-white);
+    min-width: 160px;
+    z-index: 1;
+    margin-top: 7%;
+}
+
+.dropdown-content a{
+    color: var(--body-black);
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    color: #7c7a7a !important;
+    transition: 0.5s;
+}
+
+.dropdownMenu:hover .dropdown-content {
+    display: block;
+}
+/* Fin Animation Hover Menu */
 
 /* Fin Header */
 
