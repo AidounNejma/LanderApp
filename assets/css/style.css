@@ -501,9 +501,10 @@ footer h3{
 
 /* --------------------------------------------------------------------------------------------------------------- */
 
-/* Breaking point 1235px pour la nav */
 /* Responsive */
-@media screen and (max-width: 1235px){
+
+/* Breaking point 1292px pour la nav */
+@media screen and (max-width: 1292px){
     nav{
         padding: 1% 2%;
     }
@@ -515,6 +516,10 @@ footer h3{
     .burger{
         display: flex;
     }
+}
+
+/* Breaking point 1235px pour le main*/
+@media screen and (max-width: 1235px){
 
     main{
         padding: 6% 0;
