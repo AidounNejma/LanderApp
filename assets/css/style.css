@@ -484,6 +484,7 @@ footer h3{
     }
 }
 
+/* Iphone 5 SE */
 @media screen and (max-width: 320px){
 .left {
     width: 130px;
