@@ -50,13 +50,31 @@ let childLinks = document.getElementsByClassName('sideMenuLinksChild');
 let parents = document.getElementsByClassName('parentLinks');
 //console.log(parents);
 
+let back = document.getElementsByClassName('back');
+console.log(back)
+
 for(let i = 0; i < parents.length; i++){
     parents[i].addEventListener('click', e=>{
         if(e.target.nextElementSibling.style.display = "none"){
+            e.target.nextElementSibling.classList.add('slideInRight');
+            e.target.nextElementSibling.classList.remove('slideOutRight');
             e.target.nextElementSibling.style.display = "flex";
         }
         else{
             e.target.nextElementSibling.style.display = "none";
         }
+        for(let i = 0; i < back.length; i++){
+            back[i].addEventListener('click', closeMenu);
+        }
+        function closeMenu(){
+            e.target.nextElementSibling.classList.add('slideOutRight');
+            e.target.nextElementSibling.classList.remove('slideInRight');
+            setTimeout(function(){ 
+                e.target.nextElementSibling.style.display = "none";
+            }
+            , 1000);
+        }
     });
 }
+
+
